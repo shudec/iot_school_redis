@@ -7,7 +7,7 @@ Ex0:
 Create a key ext:line:count with the number of lines in file
 
 Ex1:
-Store the file data in Redis in order to show the temperature of a peculiar datetime
+Store the file data in Redis in order to show the temperature of a particuliar timestamp
 
 Ex2:
 Store the file data in Redis in order to show a graph of temperature
@@ -25,5 +25,6 @@ Show the first 10 days
 Show the last 10 days
 Show the days 10 to 20 days
 
-
+Ex6 (suppl):
+Store the mean of each days
 
