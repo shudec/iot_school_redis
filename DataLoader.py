@@ -10,8 +10,10 @@ class DataLoader(object):
         try:
             dataFile = open(self.filename, mode='r', encoding='utf-8')
             for line in dataFile:
-                    linedata = line.split(';')
-                    data.append(linedata)
+                linedata = line.split(';')
+                data.append(linedata)
+            if header:
+                data.pop(0)    
         finally:
             dataFile.close
         return data

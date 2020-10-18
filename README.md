@@ -27,4 +27,3 @@ Show the days 10 to 20 days
 
 Ex6 (suppl):
 Store the mean of each days
-

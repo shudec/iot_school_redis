@@ -6,4 +6,8 @@ dataLoader = DataLoader("Exterieur_12_10_2020.csv")
 data = dataLoader.load(header=True)
 
 for d in data:
-    r.set("ext:temperature:"+d[0], d[2])
+    #method 1
+    r.rpush("ext:timestamps", d[0])
+    r.rpush("ext:temperatures", d[2])
+    #method 2
+    r.sadd("ext:alldata", "{},{}".format(d[0],d[2]))
